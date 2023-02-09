@@ -14,6 +14,70 @@
   position: relative;
 }
 
+.campus{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(Imagenes/campus.jpg
+  );
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+  
+.campus1{
+  width:80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  
+}  
+  
+.contacto{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(Imagenes/banner1.jpg
+  );
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.campus-uni{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.campus-uni img{
+  width: 100%;
+  position: absolute;
+ 
+}
+
+.nosotros1{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(Imagenes/nosotros.jpg
+  );
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.curso{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(Imagenes/banner2.jpg
+  );
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
 nav{
   display:flex;
   padding: 2% 6%;
@@ -66,6 +130,36 @@ nav{
   text-align: center;
 }
 
+.caja-texto-contacto{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 11%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.caja-texto-campus{
+  width: 90%;
+  color: #fff;
+  position: relative;
+  top: 10%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.campus-columna{
+  flex-basis: 31%;
+  background: #fff3f3;
+  position:relative;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
 .caja-texto h1 {
   font-size: 62px;
 }
@@ -74,9 +168,16 @@ nav{
   margin: 12px 0 40px;
 }
 
-.parrafo1{
-  color:#fff;
+.caja-texto-nosotros{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 15%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
 }
+
 
 .boton-visitanos{
   display: inline-block;
@@ -95,137 +196,70 @@ nav{
   background: #3b1fd1;
 }
 
-nav .fa-solid{
-  display: none;
-}
-
-@media(max-width: 759px) {
+@media(max-width: 700px) {
   .caja-texto h1{
     font-size: 22px;
   }
-  .nav-links ul li{
-    display:block;
-  }
-  .nav-links{
-    position: absolute;
-    background: #3b1fd1;
-    height: 100vh;
-    width: 180px;
-    top: 0;
-    right: 0px;
-    text-align: left;
-    z-index: 2; 
-    transition: 1s;
 
-  }
-  nav .fa-solid{
-    display:block;
-    color: #fff;
-  }
-  .nav-links ul {
-    padding: 30px;
-  }
 
+.nav-links ul li{
+  display: block;
+}  
+/* vh = viewport heiht (altura del dispositivo) 100vh = 100% */
+.nav-links{
+  position: absolute;
+  background: #3b1fd1;
+  height: 100vh;
+  width: 180px;
+  top: 0;
+  right: 0;
+  text-align: left;
+  
+  }
 }
 
- /*---course---*/
-
- .course{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
- }
-
- p{
-  color: #777;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
- }
-
- .row{
-  margin-top: 5%;
+.fila{
+  margin-top:0;
   display: flex;
   justify-content: space-between;
- }
+}
 
- .course-col{
+.curso-columna{
   flex-basis: 31%;
   background: #fff3f3;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
-  transition: 0.5s;
- }
+}
 
- h3{
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
- }
-
- .course-col:hover{
-  box-shadow: 0 0 20Px 0px rgba(0,0,0,0.2);
- }
-
- @media(max-width: 700px){
-  .row{
-    flex-direction: column;
-    }
- }
-
- /*---Campus---*/
-
- .campus{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
- }
-
-.campus-col{
-  flex-basis: 32%;
-  border-radius: 10px;
-  margin-bottom: 30px;
+.fila1{
+  margin-top:0%;
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  overflow: hidden;
- }
-
-.campus-col img{
-  width: 100%;
-  display: block;
+  left:auto;
+  top: 10%;
+  
 }
 
-.layer {
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+.nosotros-columna{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  top:15%;
+  
+  }
 
-.layer:hover{
-  background:rgba(59, 31, 209, 0.3);
-  transition: 0.5s;
-}
-
-.layer h3{
-  width:100%;
-  font-weight: 700;
-  font-size: 26px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  position:absolute;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.layer:hover h3{
-  bottom:49%;
-  opacity: 1;
+.contacto-columna{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  
 }
