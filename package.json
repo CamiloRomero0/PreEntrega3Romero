@@ -1,0 +1,23 @@
+{
+  "name": "git_camilo_sass",
+  "version": "1.0.0",
+  "description": "pre entrega on SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamiloRomero0/PreEntrega3Romero.git"
+  },
+  "author": "camilo romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamiloRomero0/PreEntrega3Romero/issues"
+  },
+  "homepage": "https://github.com/CamiloRomero0/PreEntrega3Romero#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
